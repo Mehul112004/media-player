@@ -1,38 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(bg.avif);
-    background-position: center;
-    background-size: cover;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(bg.avif);
+  background-position: center;
+  background-size: cover;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-    justify-self: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius:20px;
-    background-color: transparent;
-    -moz-backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: saturate(1.2);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.288);
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  justify-self: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: transparent;
+  -moz-backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: saturate(1.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.288);
 }
-.image-container{
-    border-radius: 1rem;
-    overflow: hidden;
+.image-container {
+  border-radius: 1rem;
+  overflow: hidden;
 }
-.timestamps{
-    display:flex;
-    /* width: 100%; */
+.progress-timestamps {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  gap: 1rem;
+}
+.progress-timestamps p {
+  color: rgb(255, 255, 255);
+}
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  /* border-radius:20px; */
+  /* height: 10px; */
+  width: 65%;
+}
+input::-webkit-slider-runnable-track{
+    background: rgba(255, 255, 255, 0.549);
+    border-radius: 20px;
+    height: 4px;
+}
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 10px;
+    background: black;
+    background-color: aqua;
+    width: 10px;
+    margin-top:-3.3px;
+    border-radius: 50%;
+    background: white;
+}
+.controls{
+  height: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pause.play{
+  position: relative;
+}
+#pause{
+  display: none;
+}
+#next,#previous{
+  height: 20px;
+}
+.controls div img{
+  position: relative;
+  height: 20px;
+
 }

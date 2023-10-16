@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uplayer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="container">
@@ -17,19 +17,31 @@
           height="250px"
         />
       </div>
-      <div class="timestamps">
+      <div class="controls">
+        <img src="previous.png" alt="" id="previous">
+        <div class="pause play">
+          <img src="pause.png" alt="" id="pause">
+          <img src="play.png" alt="" id="play">
+        </div>
+        <img src="next.png" alt="" id="next">
+      </div>
+      <div class="progress-timestamps">
         <p id="start">0:00</p>
+        <input
+          type="range"
+          name="playback-progress"
+          id="playback-progress"
+          value="0"
+          min="0"
+          max=""
+          class="progress"
+        />
         <p id="end">0:00</p>
       </div>
-      <div class="controls"></div>
-      <input
-        type="range"
-        name="playback-progress"
-        id="playback-progress"
-        value="0"
-        min="0"
-        max=""
-      />
     </section>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
